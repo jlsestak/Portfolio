@@ -1,0 +1,126 @@
+<!--
+Jessica Sestak
+10/24/2020
+This website displays my resume
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
+    <link href="styles/resume.css" rel="stylesheet">
+    <title>Jessica Sestak's Resume</title>
+</head>
+
+<body>
+
+<!-- Picture at top of page-->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Jessica's Resume</h1>
+    </div>
+</div>
+
+<section class="border my-4 p-3 shadow container">
+    <!-- Name -->
+    <h1 class="text-center">Jessica Sestak</h1>
+
+<!--Contact information-->
+<p class="text-center">Phone: <a href="tel:253-737-7404">253-737-7404</a>&emsp; Email:
+    <a href="mailto:jlsestak@gmail.com">jlsestak@gmail.com</a>&emsp; LinkedIn:
+    <a href="https://www.linkedin.com/in/jessica-sestak">www.linkedin.com/in/jessica-sestak</a></p>
+    <hr>
+
+
+
+    <!-- Summary of interest-->
+    <h2>Summary</h2>
+    <p>Passionate Developer located in Seattle, looking for a full-time position creating JAVA applications</p>
+<hr>
+
+    <!--Education-->
+    <h2>Education</h2>
+    <h3>Bachelor of Applied Science, Software Development</h3>
+    <p>Green River College, Auburn, WA<br>
+        A Computer Science program focused on Software Development and Engineering
+        Encompasses both Front and Back End development in a lab setting </p>
+    <h3>AAS-T Information Technology-Systems and Security </h3>
+    <p>Green River College, Auburn, WA <br>
+        An undergraduate degree with an emphasis on Software Development</p>
+<hr>
+
+<!-- Skills & Certifications-->
+<h2>Skills & Certification</h2>
+
+<ul>
+    <li>Languages: Java, JavaScript, SQL, Python, PHP</li>
+    <li>Web: HTML/CSS, Bootstrap, jQuery, other</li>
+    <li>Tools: Eclipse, BlueJ, IntelliJ, Linux, AS400</li>
+    <li>Requisite coursework for CompTIA Security+, Linux+, Networking+, and A+</li>
+    <li>Business logistics administration</li>
+    <li>Customer facing business administration</li>
+    <li>Bootstrap Certified</li>
+</ul>
+<hr>
+
+<!--Experience Section-->
+<h2>Experience</h2>
+
+<h3>St. James Outreach</h3>
+
+<ul>
+    <li>Created website for local charity helping low-income residents and homeless get help with bills, drivers
+        licenses and IDs, and referral information
+    </li>
+    <li>Integrated HTML, CSS, Javascript, and PHP in a team environment for multifunctional website</li>
+</ul>
+
+<h3>Personal Website</h3>
+
+<ul>
+    <li>Created autobiographical website with sole control from planning to implementation</li>
+    <li>Used HTML, CSS, and Javascript to create a multi-page website</li>
+</ul>
+
+<h3>Assassin Game</h3>
+
+<ul>
+    <li>Created a program that plays an interactive game</li>
+    <li>Uses linked lists to remove user selected assassinated people from a linked list and add them to a graveyard
+    </li>
+</ul>
+
+<h3>Administrative Assistant<br>Crown Pacific Fine Foods<br></h3>
+
+<ul>
+    <li>General administration including LTL management, sales reports, invoicing, and customer support.</li>
+    <li>Integrate multiple systems in order to generate reports, organize outbound LTL and ground shipments, respond to
+        client requests and questions in real time.
+    </li>
+    <li>Keep track of productivity and accuracy in warehouse using self-created formulas. Create reports for customers
+        to keep track of their orders.
+    </li>
+</ul>
+
+<h3>Administrative Assistant<br>Freight Systems<br></h3>
+
+<ul>
+    <li>General administration regarding logistics for shipping solutions</li>
+    <li>Data entry into DataFlex to track client shipments, scanner maintenance, oversaw driver BoL management, and
+        implemented new scanner system.
+    </li>
+</ul>
+</section>
+<script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
