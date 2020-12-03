@@ -1,0 +1,122 @@
+<!--
+Jessica Sestak
+12/2/2020
+This website displays my landing page
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <title>Jessica Sestak's Landing Page</title>
+</head>
+
+<body>
+
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Jessica Sestak</h1>
+    </div>
+</div>
+
+<div class="container">
+    <!--Bio-->
+    <h4 class="text-center text-white">About Me</h4>
+    <section class="border my-4 p-3 shadow text-center ">
+        <div>Hello! My name is Jessica and I’m a programmer. I’m working on my software development bachelors
+            degree at green river and work full time in an administrative setting. I really enjoy coding
+            and I hope to one day work developing software that helps optimize renewable energy devices.
+            Conservation and the outdoors are important to me, and I have a long history of rafting, camping and skiing.
+        </div>
+    </section>
+
+    <!--Portfolio-->
+    <h4 class="text-center text-white">Some of my work</h4>
+    <section class="border my-4 p-3 shadow text-center ">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col">
+                    <section class="card mb-5" id="dotcom">
+                        <img class="card-img-top" src="images/dotcom.PNG" alt="St.James Outreach Website">
+                        <div class="card-body">
+                            <h5 class="card-title">St. James Outreach</h5>
+                            <p class="card-text">Worked collaboratively with my group (Dotcom) to come up
+                                with a great website.</p>
+                            <div class="list-group list-group-flush">
+                                <a class="list-group-item" href="http://dotcom.greenriverdev.com/">Our Website</a>
+                            </div>
+                        </div>
+
+                    </section><!-- card -->
+                </div>
+                <div class="col">
+                    <section class="card mb-5" id="form">
+                        <img class="card-img-top" src="images/formjs.PNG" alt="Form">
+                        <div class="card-body">
+                            <h5 class="card-title">St. James Outreach Form Page</h5>
+                            <p class="card-text">Cool JavaScript features like auto-formatting phone number!</p>
+                        </div>
+                    </section><!-- card -->
+                </div>
+
+                <div class="col">
+                    <section class="card mb-5" id="email">
+                        <img class="card-img-top" src="images/email.PNG" alt="Form Completed Email">
+                        <div class="card-body">
+                            <h5 class="card-title">St. James Outreach Form Completion Email</h5>
+                            <p class="card-text">Used PHP to take in information from the form and send it in an
+                                email.</p>
+                        </div>
+                    </section><!-- card -->
+                </div>
+
+
+                <div class="col">
+                    <section class="card mb-5" id="blackjack">
+                        <img class="card-img-top" src="images/blackjack.PNG" alt="Black Jack Card Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Jack Card Game</h5>
+                            <p class="card-text">Created a Java Black Jack Card game using Streams and Lambda
+                                expressions</p>
+                        </div><!-- card-body -->
+                    </section><!-- card -->
+                </div>
+                <div class="col">
+                    <section class="card mb-5" id="magicsquare">
+                        <img class="card-img-top" src="images/magicsquares.PNG" alt="MagicSquare Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Magic Squares Game</h5>
+                            <p class="card-text">Created a Java Magic Square Game using bitwise operators</p>
+                        </div><!-- card-body -->
+                    </section><!-- card -->
+                </div>
+            </div>
+        </div><!-- content container -->
+        <h5 class="text-center">More to be added soon!</h5>
+    </section>
+
+    <!--My Links-->
+    <h4 class="text-center text-white">Check out my links!</h4>
+    <section class="border my-4 p-3 shadow text-center ">
+        <a href="https://www.linkedin.com/in/jessica-sestak/" target="_blank" class="btn btn-primary" role="button">LinkedIn</a>
+        <a href="/305/portfolio/resume.html" target="_blank" class="btn btn-success" role="button">Resume</a>
+        <a href="/305/guestbook/adminpage.php" target="_blank" class="btn btn-warning" role="button">Guest List</a>
+        <a href="/305/guestbook/index.php" target="_blank" class="btn btn-danger" role="button">Guestbook Form</a>
+    </section>
+</div>
+<script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts/form.js"></script>
+</body>
+</html>
