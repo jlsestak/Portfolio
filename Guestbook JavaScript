@@ -1,0 +1,109 @@
+/*
+ * Jessica Sestak
+ * 12/2/2020
+ * form.js unhides input box for other and validates form
+ */
+/*This function checks to see if the other option has been selected and if
+    it has than it unhides the input box
+ */
+document.getElementById("guestbookForm").onsubmit = validate;
+
+function checkValue(val) {
+
+    // If the checkbox is checked, display the output text
+    if (val === "other") {
+        document.getElementById('meetLabel').style.display = 'block';
+        document.getElementById('meet').style.display = 'block';
+    } else {
+        document.getElementById('meetLabel').style.display = 'none';
+        document.getElementById('meet').style.display = 'none';
+    }
+
+}
+
+//Unhides mailingSelect if mailing is checked
+function mailingList() {
+    let checkbox = document.getElementById("mailing");
+    let mailingselect = document.getElementById("mailingSelect");
+    if (checkbox.checked === true) {
+        mailingselect.style.display = "block";
+    } else {
+        mailingselect.style.display = "none";
+    }
+}
+
+//validate the form
+function validate() {
+
+    let isValid;
+
+    //Checks to see if name is blank and makes isValid false if it is blank
+    let name = document.getElementById("fname").value;
+    let errFName = document.getElementById("error-fname");
+    if (name === "") {
+        errFName.className = "errors";
+        isValid = false;
+    } else {
+        errFName.className = "hidden";
+    }
+
+    //Checks to see if last name is blank
+    let lastName = document.getElementById("lname").value;
+    let errLName = document.getElementById("error-lname");
+    if (lastName === "") {
+        errLName.className = "errors";
+        isValid = false;
+    } else {
+        errLName.className = "hidden";
+    }
+
+    //checks to see if email is valid if not empty
+    let email = document.getElementById("email").value;
+    let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    let errorEmail = document.getElementById("error-email-incorrect");
+    if (!(email.match(mailformat)) && (email !== "")) {
+        errorEmail.className = "errors";
+        isValid = false;
+    } else {
+        errorEmail.className = "hidden";
+    }
+
+    //checks to see if linkedIn starts with http and ends with .com
+    let linkedInSelect = document.getElementById("link").value;
+    let linkedError = document.getElementById("error-linked");
+    let starts = linkedInSelect.startsWith("http");
+    let ends = linkedInSelect.endsWith(".com");
+    if ((linkedInSelect !== "") && !(starts && ends)) {
+        linkedError.className = "errors";
+        isValid = false;
+    } else {
+        linkedError.className = "hidden";
+    }
+
+    //checks to see if email is not empty if mailing is checked
+    let checked = document.getElementById("mailing").checked;
+    let errorChecked = document.getElementById("error-email");
+    if (checked) {
+        if (email === "") {
+            errorChecked.className = "errors";
+            isValid = false;
+        } else {
+            errorChecked.className = "hidden";
+        }
+    } else {
+        errorChecked.className = "hidden";
+    }
+
+    //checks to see if meetSelector is set to an appropriate value
+    let meetSelector = document.getElementById("met").value;
+    let errMeet = document.getElementById("errMeet");
+    if (meetSelector === "none") {
+        errMeet.className = "errors";
+        isValid = false;
+    } else {
+        errMeet.className = "hidden";
+    }
+
+    return isValid;
+
+}
